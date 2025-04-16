@@ -51,7 +51,7 @@ def scrape_jobs():
 
     queries = [
         Query(
-            options=QueryOptions(limit=10)
+            options=QueryOptions(limit=2)
         ),
         Query(
             query='Engineer',
