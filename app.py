@@ -77,7 +77,8 @@ def scrape_jobs():
     scraper.run(queries)
 
     return jsonify(jobs)
-
-
+@app.route('/', methods=['GET'])
+def home():
+    return "herro"
 if __name__ == '__main__':
     app.run(debug=True)
